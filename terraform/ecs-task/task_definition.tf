@@ -1,5 +1,5 @@
 resource "aws_ecs_task_definition" "this" {
-  family                = "${var.base_name}-github-actions-runner"
+  family                = var.base_name
   cpu                   = 256
   memory                = 512
   execution_role_arn    = aws_iam_role.ecs_task_execute.arn
