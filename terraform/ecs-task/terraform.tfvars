@@ -1,0 +1,6 @@
+base_name            = "selfhosted-runner"
+runner_image_repo    = "selfhosted-github-actions-runner"
+runner_image_tag     = "20220615"
+github_account_token = "ghp_cHaNgEYourgiTHUbAccessTOKEn123456789"
+target_owner         = "moriryota62"
+target_repo          = "selfhosted-runner-on-ecs"

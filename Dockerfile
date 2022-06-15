@@ -1,0 +1,2 @@
+FROM alpine
+ARG TEST=1
