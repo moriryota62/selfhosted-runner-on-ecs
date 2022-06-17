@@ -18,6 +18,10 @@ resource "aws_ecs_task_definition" "this" {
             "value": "${var.github_account_token}"
         },
         {
+            "name": "ORGANIZATION",
+            "value": "${var.target_organization}"
+        },
+        {
             "name": "OWNER",
             "value": "${var.target_owner}"
         },

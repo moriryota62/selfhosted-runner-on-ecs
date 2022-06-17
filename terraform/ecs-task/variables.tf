@@ -18,12 +18,20 @@ variable "github_account_token" {
   type        = string
 }
 
+variable "target_organization" {
+  description = "ターゲットリポジトリの組織"
+  type        = string
+  default     = null
+}
+
 variable "target_owner" {
   description = "ターゲットリポジトリの所有者"
   type        = string
+  default     = null
 }
 
 variable "target_repo" {
   description = "ターゲットリポジトリのリポジトリ名"
   type        = string
+  default     = null
 }
