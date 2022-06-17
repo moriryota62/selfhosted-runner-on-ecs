@@ -31,3 +31,7 @@ terraform.tfvarsで指定する`vpc_id`,`private_subnet_ids`は環境にあわ�
 GitHub Actions セルフホストrunner用のECSタスク定義を作成します。ECSタスク様にタスク実行用のIAMロールとタスクに付与するIAMロールを作成します。後者のロールにはECRへイメージプッシュするため`AmazonEC2ContainerRegistryFullAccess`のポリシーを付与しています。
 
 terraform.tfvarsで指定する`github_account_token`は環境にあわせて修正してください。`target_organization`または`target_owner`、`target_repo`も環境にあわせて修正してください。
+
+## ecs-service
+
+GitHub Actions セルフホストrunner用のECSタスクを実行するサービスを作成します。
